@@ -1,4 +1,4 @@
-Windows Registry
+1. Windows Registry
 Windows Registry is a collection of databases that contains the system's configuration data.
 This configuration data can be about the hardware, the software, or the user's information.
 It also includes data about the recently used files, programs used, or devices connected to 
@@ -10,4 +10,24 @@ registry in the upcoming tasks.
 
 Windows registry consists of Keys and Values. When u open the regedit.exe utility to view the registry, 
 the folders you see are Registry Keys. Registry Values are the data store in these Registry Keys.
-A Registry Hive is a group of Keys, subkeys, and values stored in a single file on the disk
+A Registry Hive is a group of Keys, subkeys, and values stored in a single file on the disk.
+
+2. Structure of the Registry
+The registry on any Windows system contains the following five root keys:
+    1. HKEY_CURRENT_USER
+    2. HKEY_HKEY_USERS
+    3. HKEY_LOCAL_MACHINE
+    4. HKEY_CLASSES_ROOT
+    5. HKEY_CURRENT_CONFIG
+
+To see this, you press the windows key and the R key simultaneously. Then type regedit.exe, then you can
+see the registry editor window.
+
+HKEY_CURRENT_USER: Contains the root of the configuration information for the user who is currently logged 
+on. The user's folders, screen colors, and control panel settings are stored here. This information is associated
+with the user's profile. This key is somtimes abbreviated as HKCU.
+
+HKEY_USERS: Contains all the actively loaded user profiles on the computer. HKEY_CURRENT_USER is a subkey of HKEY_USERS.
+HKEY_USERS is sometimes abbreviated as HKU.
+
+
